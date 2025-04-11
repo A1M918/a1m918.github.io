@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Aamir Mughal - Senior Full-Stack Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fdfdfd;
+            padding: 20px;
+            max-width: 800px; /* Limit width for readability */
+            margin: 20px auto; /* Center content */
+            border: 1px solid #eee;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: #2c3e50; /* Dark blue-grey */
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        h1 { font-size: 2em; margin-top: 0; border-bottom: 2px solid #3498db; padding-bottom: 0.3em;}
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eee; padding-bottom: 0.2em; }
+        h3 { font-size: 1.2em; color: #34495e; /* Slightly lighter blue-grey */ }
+
+        strong { font-weight: 600; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        hr { border: 0; height: 1px; background: #ddd; margin: 2em 0; }
+        ul { padding-left: 20px; margin-bottom: 1em; }
+        li { margin-bottom: 0.5em; }
+
+        .compact-contact-info {
+            margin: 0.5em 0 1em 0; /* Spacing */
+        }
+        .contact-row {
+            margin-bottom: 0.3em;
+            font-size: 0.95em; /* Slightly smaller text */
+        }
+        .contact-item {
+            display: inline-block; /* Place items side-by-side */
+            margin-right: 5px;
+        }
+        .contact-item i {
+            margin-right: 5px;
+            color: #3498db;
+            width: 15px;
+            text-align: center;
+        }
+        .separator {
+            display: inline-block;
+            margin: 0 5px; /* Space around separator */
+            color: #aaa; /* Lighter color for separator */
+        }
+
+        .experience-item, .education-item, .certification-item, .achievement-item {
+            margin-bottom: 1.5em;
+            page-break-inside: avoid;
+            display: block; /* Reinforce block display for page break calculation */
+        }
+        .experience-item h3, .education-item h3 { margin-top: 0.5em; margin-bottom: 0.2em;}
+        .experience-item .company, .education-item .institution { font-weight: bold; }
+        .experience-item .date, .education-item .date { font-style: italic; color: #777; font-size: 0.9em; margin-bottom: 0.5em; }
+
+        .skills-list {
+            list-style: none;
+            padding-left: 0;
+            display: flex; /* Use Flexbox */
+            flex-wrap: wrap; /* Allow items to wrap */
+            gap: 10px 30px; /* Row gap and Column gap */
+            margin-bottom: 1em;
+        }
+        .skills-list li {
+             margin-bottom: 0; /* Remove bottom margin, gap handles spacing */
+             flex-basis: calc(50% - 15px); /* Aim for roughly two columns, adjusting for gap */
+        }
+        .skills-list li strong {
+            display: inline;
+            margin-right: 5px;
+            font-weight: 600;
+        }
+
+        @media print {
+            body {
+                max-width: none;
+                margin: 1cm;
+                padding: 0;
+                border: none;
+                box-shadow: none;
+                background: white;
+                font-size: 10pt;
+            }
+            h1 { font-size: 16pt; }
+            h2 { font-size: 14pt; }
+            h3 { font-size: 11pt; }
+            a { color: black; text-decoration: none; }
+            a[href^="http"]:after { content: " (" attr(href) ")"; font-size: 9pt; }
+            a[href^="#"]:after { content: ""; }
+            hr { background: #ccc; margin: 1.5em 0; }
+            .skills-list {
+                display: flex; /* Maintain flex for print */
+                flex-wrap: wrap;
+                gap: 5px 15px; /* Adjust gap for print */
+            }
+             .skills-list li {
+                 flex-basis: calc(50% - 8px); /* Adjust basis for print gap */
+             }
+             .skills-list li strong {
+                 font-weight: bold;
+             }
+            .compact-contact-info {
+                 margin-bottom: 0.5em; /* Adjust print spacing */
+            }
+            .contact-item i {
+                display: none; /* Hide icons in print for cleaner look */
+            }
+             /* Prevent URL repetition for contact links in print */
+             .compact-contact-info a[href^="http"]:after,
+             .compact-contact-info a[href^="mailto"]:after {
+                 content: "";
+             }
+            .separator {
+                color: #555;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Muhammad Aamir Mughal</h1>
+    <p><strong>Senior Full-Stack Engineer</strong></p>
+    <div class="compact-contact-info">
+        <p class="contact-row">
+            <span class="contact-item"><i class="fas fa-phone"></i> Phone: +34 __________</span>
+            <span class="separator">|</span>
+            <span class="contact-item"><i class="fas fa-envelope"></i> Email: <a href="mailto:9.one.eight@gmail.com">9.one.eight@gmail.com</a></span>
+        </p>
+        <p class="contact-row">
+            <span class="contact-item"><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/aim918" target="_blank">linkedin.com/in/aim918</a></span>
+            <span class="separator">|</span>
+            <span class="contact-item"><i class="fab fa-github"></i> GitHub: <a href="https://github.com/AIM918" target="_blank">github.com/AIM918</a></span>
+        </p>
+    </div>
+
+    <hr>
+
+    <h2>Professional Summary</h2>
+    <p>Results-driven <strong>Senior Full-Stack Engineer</strong> with <strong>6+ years</strong> of experience in designing, developing, and deploying scalable web and mobile applications. Proficient in <strong>TypeScript, JavaScript, React, Node.js, Angular, AWS, and MongoDB</strong>. Skilled in <strong>Agile methodologies</strong>, <strong>unit and end-to-end testing</strong>, and mentoring junior developers. Passionate about solving complex problems and delivering high-quality, user-centric solutions.</p>
+
+    <hr>
+
+    <h2>Technical Skills</h2>
+    <ul class="skills-list">
+        <li><strong>Programming Languages:</strong> TypeScript, JavaScript, Python</li>
+        <li><strong>Frontend:</strong> React, Angular, Redux, Redux Saga</li>
+        <li><strong>Backend:</strong> Node.js, Express, Serverless, RESTful APIs, GraphQL</li>
+        <li><strong>Databases:</strong> MongoDB, MySQL, PostgreSQL, MSSQL</li>
+        <li><strong>Cloud & DevOps:</strong> AWS (EC2, S3, Lambda), Terraform, Redis, Docker</li>
+        <li><strong>Testing:</strong> Jest, Mocha, Sinon, Supertest, Cypress</li>
+        <li><strong>Tools:</strong> GitHub, JIRA, ServiceNow, Webpack, NPM</li>
+        <li><strong>IoT:</strong> Arduino, Sensors, Embedded Systems</li>
+        <li><strong>Languages:</strong> English (Proficient), Urdu (Native)</li>
+    </ul>
+
+    <hr>
+
+    <h2>Professional Experience</h2>
+
+    <div class="experience-item">
+        <h3>Senior Full-Stack Engineer</h3>
+        <p class="company">EPAM Systems S.L, Malaga, Spain</p>
+        <p class="date">June 2022 – Present</p>
+        <ul>
+            <li>Developed and maintained <strong>web applications</strong> using <strong>React (TypeScript)</strong> and <strong>Node.js (TypeScript)</strong>, improving application performance by <strong>25%</strong>.</li>
+            <li>Conducted <strong>code reviews</strong> and enforced coding standards, reducing production bugs by <strong>20%</strong>.</li>
+            <li>Wrote <strong>unit and end-to-end tests</strong> using <strong>Jest, Mocha, and Sinon</strong>, achieving <strong>95% test coverage</strong>.</li>
+            <li>Collaborated with cross-functional teams using <strong>Agile methodologies</strong> and <strong>JIRA</strong>, delivering projects <strong>10% ahead of schedule</strong>.</li>
+            <li>Integrated <strong>ServiceNow</strong> and <strong>Redis</strong> for backend solutions, enhancing system reliability and scalability.</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <h3>Senior Full-Stack Engineer</h3>
+        <p class="company">10pearls, PK</p>
+        <p class="date">July 2020 – May 2022</p>
+        <ul>
+            <li>Built and maintained applications using <strong>React (TypeScript), Node.js (TypeScript), Angular, MongoDB, and AWS</strong>, serving <strong>10,000+ active users</strong>.</li>
+            <li>Mentored <strong>5+ junior developers</strong> and conducted training sessions on <strong>Terraform</strong>, improving team efficiency by <strong>15%</strong>.</li>
+            <li>Implemented <strong>unit and end-to-end tests</strong> using <strong>Jest, Mocha, Sinon, and Supertest</strong>, reducing bug reports by <strong>30%</strong>.</li>
+            <li>Reviewed <strong>pull requests</strong> and ensured adherence to coding standards, maintaining a <strong>98% code quality score</strong>.</li>
+            <li>Followed <strong>Agile methodologies</strong> and managed tasks using <strong>JIRA</strong>, achieving a <strong>90% on-time delivery rate</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <h3>Senior Backend Developer</h3>
+        <p class="company">G.Networks Communications, London</p>
+        <p class="date">October 2019 – July 2020</p>
+        <ul>
+            <li>Led a <strong>distributed Node.js team</strong> across the UK, Pakistan, and Ukraine, delivering projects with <strong>100% client satisfaction</strong>.</li>
+            <li>Implemented <strong>serverless architectures</strong>, reducing infrastructure costs by <strong>40%</strong>.</li>
+            <li>Wrote <strong>unit tests</strong> using <strong>Mocha, Sinon, and Assert</strong>, achieving <strong>90% test coverage</strong>.</li>
+            <li>Conducted <strong>code reviews</strong> and promoted best coding practices, improving code maintainability by <strong>25%</strong>.</li>
+            <li>Researched and implemented new technologies, enhancing system performance by <strong>20%</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <h3>Full Stack Mobile Developer</h3>
+        <p class="company">Try Smart Bite, Malaysia</p>
+        <p class="date">April 2019 – October 2019</p>
+        <ul>
+            <li>Developed and optimized <strong>mobile applications</strong> using <strong>React Native and Node.js</strong>, improving app performance by <strong>30%</strong>.</li>
+            <li>Designed and integrated <strong>APIs</strong> with business logic in <strong>Node.js</strong>, reducing API response time by <strong>20%</strong>.</li>
+            <li>Collaborated with a globally distributed team across Malaysia, Pakistan, India, Singapore, and Italy, ensuring seamless project delivery.</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <h3>Full Stack Mobile Developer</h3>
+        <p class="company">Skoolify, PK</p>
+        <p class="date">April 2018 – March 2019</p>
+        <ul>
+            <li>Built <strong>mobile applications</strong> using <strong>React Native, Redux, and Redux Saga</strong>, serving <strong>5,000+ active users</strong>.</li>
+            <li>Integrated <strong>Google FCM</strong> for push notifications, increasing user engagement by <strong>25%</strong>.</li>
+            <li>Optimized app performance and added new features, achieving a <strong>4.7/5 app store rating</strong>.</li>
+            <li>Developed <strong>backend APIs</strong> using <strong>Node.js</strong>, reducing API latency by <strong>15%</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <h3>Software Engineer</h3>
+        <p class="company">Square Consulting Pvt. Ltd, PK</p>
+        <p class="date">April 2018 – March 2019</p> <!-- Note: Dates overlap with Skoolify? Check CV.md -->
+         <ul>
+            <li>Customized <strong>open-source PHP-based CRM systems</strong> for private banks, improving system efficiency by <strong>20%</strong>.</li>
+            <li>Integrated <strong>banking transaction APIs</strong>, reducing transaction processing time by <strong>30%</strong>.</li>
+            <li>Deployed projects on-site, ensuring <strong>100% client satisfaction</strong>.</li>
+        </ul>
+    </div>
+
+     <div class="experience-item">
+        <h3>Junior Software Engineer</h3>
+        <p class="company">Octaves Technologies, PK</p>
+        <p class="date">March 2017 – February 2018</p>
+        <ul>
+            <li>Customized <strong>open-source PHP Yii-based CRM</strong> for flight agents, improving system usability by <strong>25%</strong>.</li>
+            <li>Developed <strong>back-office solutions</strong> and <strong>business-to-business setups</strong>, increasing operational efficiency by <strong>20%</strong>.</li>
+            <li>Worked on <strong>IoT projects</strong> using <strong>Arduino and sensors</strong>, delivering innovative solutions for clients.</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <h2>Education</h2>
+    <div class="education-item">
+        <h3>Bachelor of Computer Science</h3>
+        <p class="institution">Bahria University, Karachi, PK</p>
+        <p class="date">February 2014 – December 2017</p>
+    </div>
+
+    <hr>
+
+    <h2>Certifications & Training</h2>
+     <div class="certification-item">
+        <ul>
+            <li>Terraform Training (Conducted for 10pearls)</li> <!-- Corrected company name -->
+            <li>Serverless Architectures (Self-taught and implemented at G.Networks)</li>
+        </ul>
+    </div>
+
+
+    <hr>
+
+    <h2>Key Achievements</h2>
+    <div class="achievement-item">
+        <ul>
+            <li>Successfully led and mentored <strong>distributed teams</strong> across multiple countries, ensuring seamless project delivery.</li>
+            <li>Optimized <strong>mobile app performance</strong>, resulting in a <strong>30% improvement in user experience</strong>.</li>
+            <li>Implemented <strong>serverless architectures</strong>, reducing infrastructure costs by <strong>40%</strong>.</li>
+            <li>Conducted <strong>training sessions on Terraform</strong>, improving team efficiency by <strong>15%</strong>.</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <h2>Additional Information</h2>
+    <ul>
+        <li><strong>Availability:</strong> Immediately available</li>
+        <li><strong>Visa Status:</strong> Eligible to work in Spain</li>
+    </ul>
+
+</body>
+</html>
