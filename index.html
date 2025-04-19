@@ -169,10 +169,15 @@
     }
 
     @media print {
+      @page {
+        /* margin: 1cm; */
+        size: auto; 
+        /* marks: none; */
+      }
       body {
         max-width: none;
-        margin: 1cm;
-        padding: 0;
+        margin: 0cm;
+        padding: 0cm;
         border: none;
         box-shadow: none;
         background: white;
@@ -184,7 +189,9 @@
       }
 
       h2 {
+        /* page-break-before: avoid; */
         font-size: 14pt;
+        /* margin-top: 0.5cm; */
       }
 
       h3 {
